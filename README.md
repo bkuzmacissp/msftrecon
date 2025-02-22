@@ -7,7 +7,7 @@ MSFTRecon is a reconnaissance tool designed for red teamers and security profess
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/msftrecon.git
+git clone https://github.com/Arcanum-Sec/msftrecon.git
 cd msftrecon
 
 # Create virtual environment
@@ -16,6 +16,7 @@ source venv/bin/activate
 
 # Install requirements
 pip install -r requirements.txt
+chmod +x msftrecon.py
 ```
 
 ## Usage
