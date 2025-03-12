@@ -557,7 +557,7 @@ class AzureRecon:
 
         # Check OAuth permissions and grants
         try:
-            manifest_url = f"https://{self.ms_login}/{tenant_id}/oauth2/v2.0/authorize?client_id=common&response_type=id_token&scope=openid profile"
+            manifest_url = f"https://{self.ms_login}/{tenant_id}/oauth2/v2.0/authorize?client_id=common&response_type=id_token&scope=openid+profile"
             response = urlopen(Request(manifest_url, headers={"User-agent": "Mozilla/5.0"}))
             if response.status == 200:
                 content = response.read().decode()
