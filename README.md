@@ -18,7 +18,13 @@ source venv/bin/activate
 pip install -r requirements.txt
 chmod +x msftrecon.py
 ```
-
+## Docker
+```bash
+# Build the container image
+docker build -t mstfrecon .
+# Run the container
+docker run msftrecon -d example.com
+```
 ## Usage
 
 Basic scan:
